@@ -8,7 +8,7 @@ import confetti from 'canvas-confetti';
 import GlassCard from '../components/GlassCard';
 import QrCodeModal from '../components/QrCodeModal';
 import EditUrlModal from '../components/EditUrlModal';
-import { api } from '../utils/api';
+import { api, getBackendBaseUrl } from '../utils/api';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -53,7 +53,7 @@ const Dashboard = () => {
     }
   };
 
-  const [serverBaseUrl, setServerBaseUrl] = useState('http://localhost:5000');
+  const [serverBaseUrl, setServerBaseUrl] = useState(getBackendBaseUrl());
 
   useEffect(() => {
     fetchUrls();

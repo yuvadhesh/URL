@@ -92,3 +92,7 @@ export const api = {
     return handleResponse(response);
   },
 };
+
+export const getBackendBaseUrl = () => {
+  return API_BASE_URL.replace(/\/api$/, '');
+};

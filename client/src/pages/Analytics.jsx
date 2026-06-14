@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 import GlassCard from '../components/GlassCard';
 import { TrendChart, DistributionList } from '../components/CustomChart';
-import { api } from '../utils/api';
+import { api, getBackendBaseUrl } from '../utils/api';
 
 const Analytics = () => {
   const { id } = useParams();
@@ -56,10 +56,6 @@ const Analytics = () => {
   }
 
   const { url, analytics } = data;
-  const getBackendBaseUrl = () => {
-    const hostname = window.location.hostname || 'localhost';
-    return `http://${hostname}:5000`;
-  };
   const fullShortUrl = `${getBackendBaseUrl()}/r/${url.shortCode}`;
   const publicStatsUrl = `/stats/${url.shortCode}`;
 
