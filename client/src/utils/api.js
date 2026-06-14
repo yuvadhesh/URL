@@ -3,7 +3,7 @@ const getApiBaseUrl = () => {
   if (hostname.includes('tunnelmole.net') || hostname.includes('loca.lt')) {
     return 'https://stgyd3-ip-157-50-4-55.tunnelmole.net/api';
   }
-  return `http://${hostname}:5000/api`;
+  return "https://url-3sjo.onrender.com/api";
 };
 
 const API_BASE_URL = getApiBaseUrl();
