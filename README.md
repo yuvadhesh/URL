@@ -40,6 +40,22 @@ User → React Frontend → Express Backend → MongoDB Database
 
 ---
 
+# 🤖 AI Tools Used
+
+- ChatGPT
+
+AI was used for:
+
+- Planning the application architecture
+- Generating boilerplate code
+- Debugging backend and frontend issues
+- Improving UI/UX design
+- Creating project documentation
+
+All AI-generated code was reviewed, modified, tested, and fully understood before submission.
+
+---
+
 # ✨ Features
 
 ## 🔒 Authentication
@@ -122,6 +138,68 @@ B --> C
 
 ---
 
+# 🔌 API Endpoints
+
+## Authentication
+
+### Register User
+
+```http
+POST /api/auth/signup
+```
+
+### Login User
+
+```http
+POST /api/auth/login
+```
+
+### Get Current User
+
+```http
+GET /api/auth/me
+```
+
+## URL Management
+
+### Create Short URL
+
+```http
+POST /api/urls/shorten
+```
+
+### Get All User URLs
+
+```http
+GET /api/urls
+```
+
+### Update URL
+
+```http
+PUT /api/urls/:id
+```
+
+### Delete URL
+
+```http
+DELETE /api/urls/:id
+```
+
+### Redirect to Original URL
+
+```http
+GET /r/:shortCode
+```
+
+### Get URL Analytics
+
+```http
+GET /api/urls/:id/analytics
+```
+
+---
+
 # 📝 Assumptions Made
 
 1. MongoDB runs locally on port 27017.
@@ -132,16 +210,21 @@ B --> C
 
 ---
 
+# 🌐 Live Demo
+
+https://url-weld-five.vercel.app/login
+
+---
 # 🚀 Setup Instructions
 
 ## Clone Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd url-shortener
+git clone https://github.com/yuvadhesh/URL.git
+cd URL
 ```
 
-## Backend Setup
+## Backend Setup 
 
 ```bash
 cd server
@@ -178,19 +261,19 @@ http://localhost:5173
 
 ## Login Page
 
-(Add Screenshot)
+![Login](screenshots/login.png)
 
 ## Dashboard
 
-(Add Screenshot)
+![Dashboard](screenshots/dashboard.png)
 
 ## Analytics Page
 
-(Add Screenshot)
+![Analytics](screenshots/analytics.png)
 
 ## QR Code Generator
 
-(Add Screenshot)
+![QR Code](screenshots/qrcode.png)
 
 ---
 
@@ -198,15 +281,18 @@ http://localhost:5173
 
 ## Users Collection
 
-(Add MongoDB Screenshot)
+![Users](screenshots/users-collection.png)
+
 
 ## URLs Collection
 
-(Add MongoDB Screenshot)
+![URLs](screenshots/urls-collection.png)
+
 
 ## Clicks Collection
 
-(Add MongoDB Screenshot)
+![Clicks](screenshots/clicks-collection.png)
+
 
 ---
 
@@ -233,7 +319,7 @@ Click Recorded
 
 Video Link:
 
-PASTE_YOUR_YOUTUBE_OR_LOOM_LINK_HERE
+https://youtu.be/tr2hBu_M2WM?si=uvaKTv7HYmdgE_q4
 
 ---
 
